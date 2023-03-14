@@ -1,0 +1,32 @@
+Pseudo Codigo Servicios Preview Alfa 0.01 //no es la oficial esta en prueba
+Inicio
+
+// Sección de servicios
+Sección de servicios
+    Título: "Servicios que ofrecemos"
+    Lista:
+        - Servicio 1
+        - Servicio 2
+        - Servicio 3
+
+// Sección de solución de problemas
+Sección de solución de problemas
+    Título: "Solución de problemas"
+    Descripción: "Si tienes algún problema, no dudes en contactarnos."
+    Enlace: "Ver trabajos"
+
+// Sección de soporte técnico
+Sección de soporte técnico
+    Título: "Soporte técnico"
+    Descripción: "Ofrecemos soporte técnico las 24 horas del día."
+
+// Sección de contacto
+Sección de contacto
+    Título: "Contacto"
+    Formulario:
+        - Campo de texto: "Nombre" (requerido)
+        - Campo de texto: "Correo electrónico" (requerido)
+        - Campo de texto de varias líneas: "Mensaje" (requerido)
+        - Botón de envío: "Enviar"
+
+Fin
