@@ -19,3 +19,35 @@ style	Atributo global	Define estilos CSS que anularán los estilos establecidos 
 target	<a>, <area>, <base>,<form>	Especifica dónde abrir el documento vinculado (en el caso de un <a>elemento) o dónde mostrar la respuesta recibida (en el caso de un <form>elemento)
 
 title	Atributo global	Texto que se mostrará en una información sobre herramientas al pasar el cursor sobre el elemento.
++Pseudocodigo
+// Inicialización de la página web
+PáginaWeb página = nueva PáginaWeb("Mi Página");
+
+// Definir la sección de contacto
+Sección secciónContacto = nueva Sección("Contacto");
+
+// Definir los enlaces de contacto
+Enlace enlaceEmail = nuevo Enlace("Email", "mailto:info@mipagina.com");
+Enlace enlaceTeléfono = nuevo Enlace("Teléfono", "tel:+123456789");
+Enlace enlaceRedesSociales = nuevo Enlace("Redes Sociales", "https://www.facebook.com/mipagina");
+
+// Añadir los enlaces de contacto a la sección correspondiente
+secciónContacto.agregarEnlace(enlaceEmail);
+secciónContacto.agregarEnlace(enlaceTeléfono);
+secciónContacto.agregarEnlace(enlaceRedesSociales);
+
+// Añadir la sección de contacto a la página web
+página.agregarSección(secciónContacto);
+
+// Control de la sección de contacto
+if (página.tieneSección("Contacto")) {
+  Sección secciónContacto = página.obtenerSección("Contacto");
+  List<Enlace> enlacesContacto = secciónContacto.obtenerEnlaces();
+
+  // Iterar a través de los enlaces de contacto y mostrarlos en la página web
+  for (Enlace enlace : enlacesContacto) {
+    página.mostrarEnlace(enlace);
+  }
+} else {
+  página.mostrarError("La sección de contacto no se encuentra disponible.");
+}
